@@ -1,0 +1,13 @@
+{
+  "role": "composition",
+  "dependencies": [
+    "ss-contracts",
+    "ss-session-source",
+    "ss-archive-sink",
+    "ss-platform-sink",
+    "ss-speech-sink",
+    "ss-surface-sink",
+    "ss-context-store",
+    "ss-llm-client"
+  ]
+}

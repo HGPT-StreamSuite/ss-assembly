@@ -1,0 +1,41 @@
+[project]
+name = "ss-assembly"
+version = "0.1.0"
+description = "Pinned composition, topology setup and cross-repository verification"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ss-archive-sink @ git+https://github.com/HGPT-StreamSuite/ss-archive-sink.git@6c12faeae4c4726ec631a6c09ffa5048dad72eb7",
+    "ss-context-store @ git+https://github.com/HGPT-StreamSuite/ss-context-store.git@0938158b75669243c596c40a17aa2dff70bd7edc",
+    "ss-contracts @ git+https://github.com/HGPT-StreamSuite/ss-contracts.git@3dca4edfb434911d0a27bf1db390442bc3489c27",
+    "ss-llm-client @ git+https://github.com/HGPT-StreamSuite/ss-llm-client.git@ce170dd63b394e36ae1cf3614fbe3e3c2bdce252",
+    "ss-platform-sink @ git+https://github.com/HGPT-StreamSuite/ss-platform-sink.git@94a6ccdccabb8ff537f84272a0527001c0adfec7",
+    "ss-session-source @ git+https://github.com/HGPT-StreamSuite/ss-session-source.git@d0ad4411f29451bede3fe8a7a182f3696a06ba5e",
+    "ss-speech-sink @ git+https://github.com/HGPT-StreamSuite/ss-speech-sink.git@a43fc2b86403e93c0e801d29e5b0c02014e88945",
+    "ss-surface-sink @ git+https://github.com/HGPT-StreamSuite/ss-surface-sink.git@b23f2711c2bc982cfc6cc7520607a1852b961a91",
+]
+
+[project.scripts]
+ss-assembly = "ss_assembly.cli:main"
+
+[project.optional-dependencies]
+rabbitmq = [
+    "aio-pika>=9.4,<10",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.22,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: explicit isolated RabbitMQ verification"]
+
+[tool.ss_mre]
+role = "composition"
+contract_version = 1
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<9",
+]

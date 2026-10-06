@@ -1,0 +1,42 @@
+{
+  "scope": {
+    "profile_id": "fixture-profile",
+    "channel_id": "fixture-channel",
+    "session_id": "fixture-session"
+  },
+  "response": "你好，這是合成問答回覆。",
+  "inputs": [
+    {
+      "kind": "live",
+      "id": "live-1",
+      "occurred_at": 1000,
+      "live": true,
+      "title": "合成直播",
+      "game": "fixture-game"
+    },
+    {
+      "kind": "transcript",
+      "id": "stt-1",
+      "occurred_at": 1001,
+      "text": "這是合成節目逐字稿。",
+      "segment_id": "segment-1",
+      "audio_source": "fixture",
+      "route_source": "live_program_mix",
+      "device_name": "fixture-device",
+      "attestation": {
+        "device_name": "fixture-device",
+        "route_source": "live_program_mix"
+      }
+    },
+    {
+      "kind": "chat",
+      "id": "chat-1",
+      "occurred_at": 1002,
+      "user_id": "fixture:user-1",
+      "platform": "fixture",
+      "text": "你好",
+      "ask": true
+    }
+  ],
+  "playback_now": 1003
+}
