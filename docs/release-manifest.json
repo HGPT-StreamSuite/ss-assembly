@@ -1,0 +1,314 @@
+{
+  "date": "2026-10-07",
+  "offline_passed": 79,
+  "local_integration_skipped": 3,
+  "broker_passed": 3,
+  "standalone_cli_count": 12,
+  "repositories": {
+    "ss-contracts": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-contracts",
+      "commit": "3dca4edfb434911d0a27bf1db390442bc3489c27",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "9 passed in 0.32s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {},
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-context-store": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-context-store",
+      "commit": "0938158b75669243c596c40a17aa2dff70bd7edc",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "9 passed in 0.62s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-evidence": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-evidence",
+      "commit": "4e0985e61b98793386a5f9ab7c62909eda4cd4b4",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "6 passed in 0.34s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-prompt": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-prompt",
+      "commit": "6b6d366c34ef0c8f961473d05f0838bcc5574c91",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "5 passed in 0.52s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-llm-client": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-llm-client",
+      "commit": "ce170dd63b394e36ae1cf3614fbe3e3c2bdce252",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "5 passed in 0.62s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-answer": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-answer",
+      "commit": "88e238aa202bfbed912e78a4b6d2435599c56cd7",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "7 passed in 0.77s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27",
+        "ss-context-store": "0938158b75669243c596c40a17aa2dff70bd7edc",
+        "ss-evidence": "4e0985e61b98793386a5f9ab7c62909eda4cd4b4",
+        "ss-prompt": "6b6d366c34ef0c8f961473d05f0838bcc5574c91",
+        "ss-llm-client": "ce170dd63b394e36ae1cf3614fbe3e3c2bdce252"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-session-source": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-session-source",
+      "commit": "d0ad4411f29451bede3fe8a7a182f3696a06ba5e",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "7 passed in 0.91s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27",
+        "ss-answer": "88e238aa202bfbed912e78a4b6d2435599c56cd7",
+        "ss-context-store": "0938158b75669243c596c40a17aa2dff70bd7edc",
+        "ss-evidence": "4e0985e61b98793386a5f9ab7c62909eda4cd4b4",
+        "ss-llm-client": "ce170dd63b394e36ae1cf3614fbe3e3c2bdce252"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-archive-sink": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-archive-sink",
+      "commit": "6c12faeae4c4726ec631a6c09ffa5048dad72eb7",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "5 passed in 0.70s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27",
+        "ss-context-store": "0938158b75669243c596c40a17aa2dff70bd7edc"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-platform-sink": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-platform-sink",
+      "commit": "94a6ccdccabb8ff537f84272a0527001c0adfec7",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "6 passed in 0.67s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-speech-sink": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-speech-sink",
+      "commit": "a43fc2b86403e93c0e801d29e5b0c02014e88945",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "7 passed in 0.66s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-surface-sink": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-surface-sink",
+      "commit": "b23f2711c2bc982cfc6cc7520607a1852b961a91",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "7 passed in 0.62s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27",
+        "ss-context-store": "0938158b75669243c596c40a17aa2dff70bd7edc"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    },
+    "ss-assembly": {
+      "url": "https://github.com/HGPT-StreamSuite/ss-assembly",
+      "commit": "6cb188df19804ab19860e6e91e121900e894a760",
+      "branch": "codex/mre-foundation",
+      "remote_branch": "main",
+      "tag": "v0.1.0",
+      "tests": "6 passed, 3 skipped in 1.34s",
+      "installed_cli": true,
+      "wheel": true,
+      "git_dependencies": {
+        "ss-contracts": "3dca4edfb434911d0a27bf1db390442bc3489c27",
+        "ss-session-source": "d0ad4411f29451bede3fe8a7a182f3696a06ba5e",
+        "ss-archive-sink": "6c12faeae4c4726ec631a6c09ffa5048dad72eb7",
+        "ss-platform-sink": "94a6ccdccabb8ff537f84272a0527001c0adfec7",
+        "ss-speech-sink": "a43fc2b86403e93c0e801d29e5b0c02014e88945",
+        "ss-surface-sink": "b23f2711c2bc982cfc6cc7520607a1852b961a91",
+        "ss-context-store": "0938158b75669243c596c40a17aa2dff70bd7edc",
+        "ss-llm-client": "ce170dd63b394e36ae1cf3614fbe3e3c2bdce252"
+      },
+      "platform": "Windows",
+      "python": "3.11.14",
+      "uv": "0.9.22"
+    }
+  },
+  "ci": {
+    "ss-contracts": {
+      "repo": "ss-contracts",
+      "conclusion": "success",
+      "databaseId": 37492635396,
+      "headSha": "3dca4edfb434911d0a27bf1db390442bc3489c27",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-contracts/actions/runs/37492635396"
+    },
+    "ss-context-store": {
+      "repo": "ss-context-store",
+      "conclusion": "success",
+      "databaseId": 37492671508,
+      "headSha": "0938158b75669243c596c40a17aa2dff70bd7edc",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-context-store/actions/runs/37492671508"
+    },
+    "ss-evidence": {
+      "repo": "ss-evidence",
+      "conclusion": "success",
+      "databaseId": 37492696187,
+      "headSha": "4e0985e61b98793386a5f9ab7c62909eda4cd4b4",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-evidence/actions/runs/37492696187"
+    },
+    "ss-prompt": {
+      "repo": "ss-prompt",
+      "conclusion": "success",
+      "databaseId": 37492728614,
+      "headSha": "6b6d366c34ef0c8f961473d05f0838bcc5574c91",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-prompt/actions/runs/37492728614"
+    },
+    "ss-llm-client": {
+      "repo": "ss-llm-client",
+      "conclusion": "success",
+      "databaseId": 37492753610,
+      "headSha": "ce170dd63b394e36ae1cf3614fbe3e3c2bdce252",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-llm-client/actions/runs/37492753610"
+    },
+    "ss-answer": {
+      "repo": "ss-answer",
+      "conclusion": "success",
+      "databaseId": 37492790278,
+      "headSha": "88e238aa202bfbed912e78a4b6d2435599c56cd7",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-answer/actions/runs/37492790278"
+    },
+    "ss-session-source": {
+      "repo": "ss-session-source",
+      "conclusion": "success",
+      "databaseId": 37492844626,
+      "headSha": "d0ad4411f29451bede3fe8a7a182f3696a06ba5e",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-session-source/actions/runs/37492844626"
+    },
+    "ss-archive-sink": {
+      "repo": "ss-archive-sink",
+      "conclusion": "success",
+      "databaseId": 37492868150,
+      "headSha": "6c12faeae4c4726ec631a6c09ffa5048dad72eb7",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-archive-sink/actions/runs/37492868150"
+    },
+    "ss-platform-sink": {
+      "repo": "ss-platform-sink",
+      "conclusion": "success",
+      "databaseId": 37492900028,
+      "headSha": "94a6ccdccabb8ff537f84272a0527001c0adfec7",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-platform-sink/actions/runs/37492900028"
+    },
+    "ss-speech-sink": {
+      "repo": "ss-speech-sink",
+      "conclusion": "success",
+      "databaseId": 37492936567,
+      "headSha": "a43fc2b86403e93c0e801d29e5b0c02014e88945",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-speech-sink/actions/runs/37492936567"
+    },
+    "ss-surface-sink": {
+      "repo": "ss-surface-sink",
+      "conclusion": "success",
+      "databaseId": 37492956344,
+      "headSha": "b23f2711c2bc982cfc6cc7520607a1852b961a91",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-surface-sink/actions/runs/37492956344"
+    },
+    "ss-assembly": {
+      "repo": "ss-assembly",
+      "conclusion": "success",
+      "databaseId": 37493001868,
+      "headSha": "6cb188df19804ab19860e6e91e121900e894a760",
+      "status": "completed",
+      "url": "https://github.com/HGPT-StreamSuite/ss-assembly/actions/runs/37493001868"
+    }
+  }
+}
