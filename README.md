@@ -62,3 +62,5 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for both diagrams and [docs/VER
 GitHub Actions includes an isolated RabbitMQ 4.1.4 service job; local default runs skip AMQP tests when no test URL is supplied.
 
 See [all 12 repositories](docs/REPOSITORIES.md) for the complete MRE index.
+
+For hands-on validation, follow the [step-by-step manual testing guide](docs/MANUAL_TESTING_GUIDE.md): individual repos, offline handoffs, uv/API composition, RabbitMQ fanout, recovery experiments and real adapters.
